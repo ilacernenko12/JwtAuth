@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Authentication-Service  # �������� ����������, ������� ����� �������������� � Spring ���������
+  datasource:
+    url: jdbc:postgresql://localhost:5432/data_center  # URL ����������� � ���� ������ PostgreSQL
+    username: postgres  # ��� ������������ ��� ����������� � ���� ������
+    password: 2010127mN  # ������ ��� ����������� � ���� ������
+    driver-class-name: org.postgresql.Driver  # ����� �������� ��� ������ � PostgreSQL
+  jpa:
+    hibernate:
+      ddl-auto: update  # ��������� ��������������� ���������� ����� ���� ������
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  # �������� �������� Hibernate ��� PostgreSQL
+keyStore:
+  path: keystore.jks  # ���� � ����� ��������� ������
+  password: password  # ������ ��� ������� � ��������� ������
+#eureka:
+#  client:
+#    register-with-eureka: true  # �������������� ����������� ���������� � Eureka
+#    fetch-registry: true  # �������������� ��������� ������� ����� �� Eureka
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka  # URL ��� Eureka-�������
+#  instance:
+#    hostname: Authorization-Service  # ���, � ������� ����� ���������������� ���������� � Eureka
+
+
